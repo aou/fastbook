@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "fastbook"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "ai_book"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyterlab = "^3.6.3"
+# nvidia-cuda-nvrtc-cu11 = "11.8.89"
+nvidia-cuda-nvrtc-cu11 = "11.7.99"
+triton = "2.0.0"
+nvidia-cudnn-cu11 = "8.5.0.96"
+nvidia-cuda-runtime-cu11 = "11.7.99"
+nvidia-cufft-cu11 = "10.9.0.58"
+nvidia-nccl-cu11 = "2.14.3"
+sympy = "^1.11.1"
+nvidia-nvtx-cu11 = "11.7.91"
+torch = "^2.0.0"
+jupyterlab-vim = "^0.16.0"
+fastai = ">=2.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.12.0"
+elpy = "^1.999"
+flake8 = "^6.0.0"
+jedi = "^0.18.2"
+autopep8 = "^2.0.2"
+yapf = "^0.32.0"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

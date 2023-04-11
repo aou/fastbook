@@ -8,3 +8,7 @@ __pycache__/
 .last_checked
 .gitconfig
 .ipynb_checkpoints/
+*.swp
+\#*#
+/.direnv/
+/.envrc
